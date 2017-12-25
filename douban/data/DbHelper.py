@@ -4,7 +4,7 @@ import os
 
 class DbHelper():
     def init_db(self):
-        conn = self.get_conn('movie.db')
+        conn = self.get_conn('./douban/data/movie.db')
         cur = conn.cursor()
         cur.execute('''CREATE TABLE MovieType
             (Id INT PRIMARY KEY NOT NULL,

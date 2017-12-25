@@ -1,7 +1,7 @@
 from scrapy import cmdline
-from data.DbHelper import DbHelper
+# from douban.data.DbHelper import DbHelper
 
-helper = DbHelper()
-helper.init_db()
+# helper = DbHelper()
+# helper.init_db()
 
-cmdline.execute("scrapy crawl douban".split())
+cmdline.execute("scrapy crawl movie".split())
